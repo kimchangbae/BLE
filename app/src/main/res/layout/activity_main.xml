@@ -5,7 +5,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="10dp"
+    tools:context=".MainActivity"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnBLEConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="블루투스"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="온/습도 정보" />
+
+        <TextView
+            android:id="@+id/txtTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="온도 데이터"/>
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="습도 데이터"/>
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>
